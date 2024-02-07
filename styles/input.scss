@@ -172,11 +172,6 @@ main {
     cursor: pointer;
     transition: 0.3s ease;
 
-    &:hover {
-      background-color: $main-color;
-      color: $light;
-    }
-
     &:active {
       opacity: 0.6;
     }
@@ -195,6 +190,11 @@ main {
   input[type="checkbox"]:hover {
     background-color: lighten($checked, 15%);
     border: solid 2px lighten($checked, 15%);
+  }
+
+  .fa-solid:hover {
+    background-color: $main-color;
+    color: $light;
   }
 }
 

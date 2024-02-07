@@ -151,10 +151,6 @@ main {
   cursor: pointer;
   transition: 0.3s ease;
 }
-.study-streak .fa-solid:hover {
-  background-color: #3f66da;
-  color: #f7f7f7;
-}
 .study-streak .fa-solid:active {
   opacity: 0.6;
 }
@@ -170,6 +166,10 @@ main {
   input[type=checkbox]:hover {
     background-color: #77cba0;
     border: solid 2px #77cba0;
+  }
+  .fa-solid:hover {
+    background-color: #3f66da;
+    color: #f7f7f7;
   }
 }
 @media screen and (min-width: 640px) {

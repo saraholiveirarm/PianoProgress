@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/fluency/48/piano.png"
+      type="image/x-icon"
+    />
+    <link rel="shortcut icon" href="piano.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/a14430386d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Progresso - Piano</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">Piano: Progresso Semanal</h1>
+      <a target="_blank" href="https://icons8.com/icon/56029/piano">
+        <img class="piano" src="piano.png" alt="" />
+      </a>
+    </header>
+
+    <main>
+      <section class="days">
+        <div class="container">
+          <label for="mon">seg</label>
+          <input type="checkbox" name="day" id="mon" />
+        </div>
+        <div class="container">
+          <label for="tue">ter</label>
+          <input type="checkbox" name="day" id="tue" />
+        </div>
+        <div class="container">
+          <label for="wed">qua</label>
+          <input type="checkbox" name="day" id="wed" />
+        </div>
+        <div class="container">
+          <label for="thu">qui</label>
+          <input type="checkbox" name="day" id="thu" />
+        </div>
+        <div class="container">
+          <label for="fri">sex</label>
+          <input type="checkbox" name="day" id="fri" />
+        </div>
+        <div class="container">
+          <label for="sat">sab</label>
+          <input type="checkbox" name="day" id="sat" />
+        </div>
+        <div class="container">
+          <label for="sun">dom</label>
+          <input type="checkbox" name="day" id="sun" />
+        </div>
+      </section>
+
+      <button class="btn" id="clear">Limpar</button>
+
+      <section class="study-streak">
+        <h2>Dias de estudo consecutivos</h2>
+
+        <div class="study-streak__counter">
+          <i class="fa-solid fa-minus" id="subtract"></i>
+          <input id="streak-count" type="text" value="0" />
+          <i class="fa-solid fa-plus" id="add"></i>
+        </div>
+        <div class="study-streak__buttons">
+          <button class="btn btn--red" id="reset">Zerar contador</button>
+          <button class="btn btn--main-color" id="add-study-days">
+            Adicionar dias estudados
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
